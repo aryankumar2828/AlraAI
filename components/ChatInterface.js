@@ -91,8 +91,8 @@ const ChatInterface = () => {
             key={index} 
             sx={{ 
               alignSelf: message.sender === 'user' ? 'flex-end' : 'flex-start',
-              bgcolor: message.sender === 'user' ? '#9AE6B4' : '#FF7F50',
-              color: message.sender === 'user' ? 'black' : 'white',
+              bgcolor: message.sender === 'user' ? '#9AE6B4' : '#F5F5F5',
+              color: message.sender === 'user' ? 'black' : 'black',
               p: 1,
               borderRadius: 1,
               maxWidth: '70%',

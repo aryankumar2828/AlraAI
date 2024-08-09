@@ -5,6 +5,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AboutSection from '../components/about';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 const theme = createTheme({
   palette: {
@@ -48,14 +49,16 @@ const HomePage = () => {
             Stay ahead of the curve with personalized
             guidance every step of the way.
           </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            style={{ marginTop: 24 }}
-          >
-            TALK TO ALRA :)
-          </Button>
+          <Link href="/generate" legacyBehavior>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              style={{ marginTop: 24 }}
+            >
+              TALK TO ALRA :)
+            </Button>
+          </Link>
           <Typography variant="caption" display="block" style={{ marginTop: 16 }}>
             Try it out!
           </Typography>
