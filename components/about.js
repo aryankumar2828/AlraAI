@@ -17,7 +17,7 @@ const AboutSection = () => {
   return (
     <Box sx={{ mt: 6, mb: 6 }}>
       <Typography variant="h4" component="h2" align="center" marginBottom={7}>
-        About AIra
+        About Alra
       </Typography>
       <Grid container spacing={10}>
         <Grid item xs={12} md={6}>
@@ -61,7 +61,7 @@ const AboutSection = () => {
               Find Your Path:
             </Typography>
             <Typography>
-              Whether you're exploring ideas or feeling lost, AIra will help you find your direction.
+              Whether you are exploring ideas or feeling lost, Alra will help you find your direction.
             </Typography>
           </Paper>
         </Grid>
@@ -82,7 +82,7 @@ const AboutSection = () => {
                 rel="noopener noreferrer" 
                 sx={{ mt: 1, textAlign: 'center', color: 'blue' }}
                 >
-                Sign up to the waitlist:)
+                Sign up to the waitlist
                 </MuiLink>
                 <MuiLink 
                 href="https://www.linkedin.com/in/aryan-kumar-10a548297/" 
