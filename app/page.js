@@ -1,95 +1,75 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/material';
+import SchoolIcon from '@mui/icons-material/School';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AboutSection from '../components/about';
+import Footer from '../components/footer';
+import Link from 'next/link';
 
-export default function Home() {
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#9AE6B4',
+    },
+  },
+});
+
+const HomePage = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <ThemeProvider theme={theme}>
+      <AppBar position="static" color="transparent" elevation={0}>
+        <Toolbar style={{ justifyContent: 'center' }}>
+          <SchoolIcon style={{ color: '#9AE6B4', marginRight: 16, fontSize: 58 }} />
+          <Typography
+            variant="h2"
+            component="div"
+            style={{
+              fontFamily: 'Space Grotesk, sans-serif',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              marginTop: 30,
+            }}>
+            AlraAI
+          </Typography>
+        </Toolbar>
+        {/*
+        <Button variant="outlined" color="primary" style={{ position: 'absolute', right: 16, top: 16 }}>
+          SIGN UP
+        </Button>
+        */}
+      </AppBar>
+      <Container maxWidth="md">
+        <Box style={{ marginTop: 72, marginBottom: 48, textAlign: 'center' }}>
+          <Typography variant="h3" component="h2" gutterBottom >
+            Navigate your college career like a PRO!
+          </Typography>
+          <Typography variant="h5" component="h3" gutterBottom>
+            Meet AIra, your AI-powered college advisor.
+            Stay ahead of the curve with personalized
+            guidance every step of the way.
+          </Typography>
+          <Link href="/generate" legacyBehavior>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              style={{ marginTop: 24 }}
+            >
+              TALK TO ALRA :)
+            </Button>
+          </Link>
+          <Typography variant="caption" display="block" style={{ marginTop: 16 }}>
+            Try it out!
+          </Typography>
+        </Box>
+      </Container>
+      <Container maxWidth="md" style={{ marginTop: 84 }}>
+        <AboutSection />
+      </Container>
+    </ThemeProvider>
   );
-}
+};
+
+
+export default HomePage;
