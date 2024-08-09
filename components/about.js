@@ -77,13 +77,22 @@ const AboutSection = () => {
                 </Typography>
 
                 <MuiLink 
-                href="https://www.example.com" 
+                href="https://tally.so/r/3lLN66" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 sx={{ mt: 1, textAlign: 'center', color: 'blue' }}
                 >
                 Sign up to the waitlist:)
                 </MuiLink>
+                <MuiLink 
+                href="https://www.linkedin.com/in/aryan-kumar-10a548297/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                sx={{ mt: 1, textAlign: 'center', color: 'black' }}
+                >
+                Connect with the Creator
+                </MuiLink>
+
             </Paper>
         </Grid>
       </Grid>
