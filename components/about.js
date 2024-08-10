@@ -60,7 +60,7 @@ const AboutSection = () => {
               Find Your Path:
             </Typography>
             <Typography>
-              Whether you&#39;re exploring ideas or feeling lost, AIra will help you find your direction.
+              Whether you are exploring ideas or feeling lost, Alra will help you find your direction.
             </Typography>
           </Paper>
         </Grid>
