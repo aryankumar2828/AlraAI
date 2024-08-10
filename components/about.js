@@ -49,6 +49,7 @@ const AboutSection = () => {
             </Typography>
           </Paper>
         </Grid>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <Grid item xs={12} md={6}>
           <Paper elevation={3} sx={{ p: 3, height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#9AE6B4', alignItems: 'center' }}>
             <ExploreIcon sx={{ fontSize: 40, color: 'black', mb: 2 }} />
