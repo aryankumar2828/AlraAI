@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AboutSection from '../components/about';
 import Footer from '../components/footer';
 import Link from 'next/link';
+import { Analytics } from "@vercel/analytics/react"
 
 const theme = createTheme({
   palette: {
