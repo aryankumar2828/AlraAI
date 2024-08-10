@@ -16,7 +16,7 @@ const AboutSection = () => {
   return (
     <Box sx={{ mt: 6, mb: 6 }}>
       <Typography variant="h4" component="h2" align="center" marginBottom={7}>
-        About AIra
+        About Alra
       </Typography>
       <Grid container spacing={10}>
         <Grid item xs={12} md={6}>
@@ -30,7 +30,7 @@ const AboutSection = () => {
               Powered by Advanced AI:
             </Typography>
             <Typography>
-              Utilizing GPT-3.5 Turbo with regular updates to keep you at the forefront.
+              Utilizing Google Gemini 1.5 with regular updates to keep you at the forefront.
             </Typography>
           </Paper>
         </Grid>
